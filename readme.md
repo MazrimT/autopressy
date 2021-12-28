@@ -1,6 +1,7 @@
 # General
 
 The script will:
+* give you a 5 second countdown tab over to the window you want it to interact with
 * press left or right arrow for a random amount of seconds
 * then pressing w/a/s or d for a few random seconds
 * sleep for a tiny bit

@@ -5,14 +5,14 @@ import numpy as np
 from logger import make_logger
 
 
-def press_key(k, rand, do_space):
+def press_key(k, rand):
 
     if k == 's':
-        rand = rand*3
+        rand = round(rand*3, 2)
 
     extra_sleep_list = np.arange(0.1, 2.1, 0.1)
 
-    if do_space == 0:
+    if pick_binary == 0:
         logger.info(f'pressing {k} for {rand} seconds')
     else:
         logger.info(f'pressing {k} for {rand} seconds with space')
@@ -78,7 +78,7 @@ def main():
     while True:
 
         #rand = random.randrange(1, 5)
-        rand = random.choice(np.arange(1, 3, 0.1))
+        rand = round(random.choice(np.arange(1, 3, 0.1)), 2)
 
         # press 9, or dont
         press_nine()

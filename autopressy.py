@@ -11,14 +11,16 @@ def press_key(k, rand):
 
     extra_sleep_list = np.arange(0.1, 2.1, 0.1)
 
-    if pick_binary == 0:
+    do_space = pick_binary()
+    
+    if do_space == 0:
         logger.info(f'pressing {k} for {rand} seconds')
     else:
         logger.info(f'pressing {k} for {rand} seconds with space')
 
     keyboard.press(k)
 
-    if pick_binary == 1:
+    if do_space == 1:
         sleep(0.4)
         keyboard.press(Key.space)
         sleep(0.1)
@@ -47,14 +49,6 @@ def press_arrow():
         keyboard.release(Key.right)
 
 
-def press_nine():
-
-
-    if pick_binary == 1:
-        logger.info("Using 9")
-        keyboard.press('9')
-        keyboard.release('9')
-
 def start_msg():
 
     for r in reversed(range(5)):
@@ -79,9 +73,6 @@ def main():
 
         #rand = random.randrange(1, 5)
         rand = round(random.choice(np.arange(1, 3, 0.1)), 2)
-
-        # press 9, or dont
-        press_nine()
 
         # press the arrows
         press_arrow()

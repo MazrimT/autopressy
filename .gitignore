@@ -4,5 +4,10 @@ __pycache__/
 # Environments
 venv/
 
-# log 
+# local log 
 *.log
+
+# PyInstaller
+build/
+dist/
+*.spec

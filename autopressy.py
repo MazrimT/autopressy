@@ -4,7 +4,6 @@ import random
 import numpy as np
 from logger import make_logger
 
-
 def press_key(k, rand):
 
     if k == 's':
@@ -77,6 +76,7 @@ def pick_binary():
 def main():
     while True:
 
+
         #rand = random.randrange(1, 5)
         rand = round(random.choice(np.arange(1, 3, 0.1)), 2)
 
@@ -102,13 +102,9 @@ def main():
 if __name__ == '__main__':
 
     logger = make_logger()
-    logger.info('Starting')
-
-
-
-
-
     keyboard = Controller()
+    
+    input("Press enter to start... ")
     start_msg()
     main()
     

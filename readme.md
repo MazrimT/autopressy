@@ -18,3 +18,6 @@ The script will:
 * quickly press the space bar in the middle of holding the keys down
 * press nr 9 before pressing the keys
 
+# binary
+The project has a compiled exe file uploaded in the binary folder.
+It's compiled with PyInstaller, use it or don't the code runs just as well as just python.

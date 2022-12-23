@@ -1,7 +1,12 @@
 # General
 
-The script will:
-* give you a 5 second countdown tab over to the window you want it to interact with
+Just a fun script to test automating keystrokes in different ways
+
+# TODO:
+put the stuff the code will do into a config file and run from that instead
+
+# What it will do
+* give you a 5 second countdown to be able to tab over to the window you want it to interact with
 * press left or right arrow for a random amount of seconds
 * then pressing w/a/s or d for a few random seconds
 * sleep for a tiny bit

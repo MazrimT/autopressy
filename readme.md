@@ -3,7 +3,8 @@
 Just a fun script to test automating keystrokes in different ways
 
 # TODO:
-put the stuff the code will do into a config file and run from that instead
+* put the stuff the code will do into a config file and run from that instead
+* instead of starting direct there should be a small gui with a start/stop button
 
 # What it will do
 * give you a 5 second countdown to be able to tab over to the window you want it to interact with

@@ -28,3 +28,4 @@ Just a fun script to test automating keystrokes in different ways
 # binary
 The project has a compiled exe file uploaded in the binary folder.
 It's compiled with PyInstaller, use it or don't the code runs just as well as just python.
+Or run the compile.py to compile it yourself

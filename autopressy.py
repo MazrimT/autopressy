@@ -12,7 +12,7 @@ def press_key(k, rand):
     extra_sleep_list = np.arange(0.1, 2.1, 0.1)
 
     do_space = pick_binary()
-    
+
     if do_space == 0:
         logger.info(f'pressing {k} for {rand} seconds')
     else:
@@ -42,7 +42,7 @@ def press_arrow():
         keyboard.press(Key.left)
         sleep(1)
         keyboard.release(Key.left)
-    
+
     elif d == 'right':
         keyboard.press(Key.right)
         sleep(1)
@@ -94,8 +94,7 @@ if __name__ == '__main__':
 
     logger = make_logger()
     keyboard = Controller()
-    
+
     input("Press enter to start... ")
     start_msg()
     main()
-    
